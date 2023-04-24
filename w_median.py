@@ -13,6 +13,7 @@ It interpolates linearly between the two points closest to the actual median.
     p2 = np.where(swc > th)[0][0]
     p1 = p2 - 1
     wMedian = (vs[p1]*(swc[p2] - th) + vs[p2]*(th -swc[p1]))/(swc[p2]-swc[p1])
+    print('wallabywinter')
     return wMedian
  
 
